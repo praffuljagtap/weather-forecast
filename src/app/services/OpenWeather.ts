@@ -22,11 +22,11 @@ const OpenWeatherAPI = (): OpenWeatherAPIType => {
         appId: APP_ID
       })}`)
       .then((response: Response) => {
-        const httpStatus = HttpResponseHandler(response) // Doesn't do much but it ideally should
-        if (httpStatus) return response.json()
-        throw Error('Invalid API Call')
+        const httpStatus = HttpResponseHandler(response) // Doesn't do much but it ideally should - keeping it simple
+        return httpStatus ? response.json() : null
       })
       .catch((errorMessage) => { throw Error(errorMessage) })
+      .finally(() => null)
     }
     return { getForecastByLocation }
   } catch (_) {
