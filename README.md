@@ -3,8 +3,8 @@
 This project is built using the following technologies - 
 - React
 - TypeScript
-- RxJS
-- Material Design
+- Styled-Components
+- [Yarn](https://yarnpkg.com/getting-started/install)
 
 Resources being used -
 - [Weather Icons](http://erikflowers.github.io/weather-icons/)
@@ -12,7 +12,16 @@ Resources being used -
 
 Instructions -
 
-Create a `.env` file at the root of the project and add the following line to the file (replace `<OpenWeatherMapAPIKey>` with your own key).
+- Create an account on [Open Weather API](https://openweathermap.org/) and generate an API Key.
+- Create a `.env` file at the root of the project and add the following line to the file (replace `<OpenWeatherMapAPIKey>` with the API key you generated in previous step).
 ```
 REACT_APP_OPEN_WEATHER_MAP_API=<OpenWeatherMapAPIKey>
+```
+- Run the following command to install all dependencies
+```
+yarn install
+```
+- Run the project using the following command
+```
+yarn start
 ```
