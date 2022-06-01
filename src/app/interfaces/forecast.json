@@ -1,0 +1,36 @@
+{
+  "dt": 1654084800,
+  "main": {
+    "temp": 292.76,
+    "feels_like": 291.98,
+    "temp_min": 292.76,
+    "temp_max": 294.4,
+    "pressure": 1016,
+    "sea_level": 1016,
+    "grnd_level": 1011,
+    "humidity": 46,
+    "temp_kf": -1.64
+  },
+  "weather": [
+    {
+      "id": 801,
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02d"
+    }
+  ],
+  "clouds": {
+    "all": 17
+  },
+  "wind": {
+    "speed": 2.69,
+    "deg": 271,
+    "gust": 4.35
+  },
+  "visibility": 10000,
+  "pop": 0,
+  "sys": {
+    "pod": "d"
+  },
+  "dt_txt": "2022-06-01 12:00:00"
+}

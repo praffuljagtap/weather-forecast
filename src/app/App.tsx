@@ -1,8 +1,10 @@
 import { ForecastPage } from './pages'
+import OpenWeatherAPIService, { OpenWeatherAPIType } from './services/OpenWeather'
 import './App.css'
 
 const App: React.FC = () =>  {
-  return <ForecastPage />
+  const openWeatherAPI: OpenWeatherAPIType = OpenWeatherAPIService.getInstance()
+  return <ForecastPage openWeatherAPI={openWeatherAPI} />
 }
 
 export default App
