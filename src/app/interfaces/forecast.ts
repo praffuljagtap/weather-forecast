@@ -31,7 +31,23 @@ interface Sys {
   pod: String
 }
 
-interface DailyForecast {
+interface LatLong {
+  lat: Number
+  lon: Number
+}
+
+interface City {
+  id: Number
+  name: String
+  coord: LatLong
+  country: String
+  population: Number
+  timezone: Number
+  sunrise: Number
+  sunset: Number
+}
+
+export interface DailyForecast {
   dt: Number
   main: Main
   weather: Weather[]
@@ -40,12 +56,13 @@ interface DailyForecast {
   visibility: Number
   pop: Number
   sys: Sys
-  dt_txt: String
+  dt_txt: string
 }
 
 interface Forecast {
+  city: City
   cod: String
-  cnt?: Number
+  cnt: Number
   message: String
   list?: DailyForecast[]
 }

@@ -1,3 +1,3 @@
-const DAYS: Number = 5
+const DAYS: Number = 20
 
 export { DAYS }

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const LocationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: stretch;
 `
 export const Input = styled.input`
   font-family: verdana;

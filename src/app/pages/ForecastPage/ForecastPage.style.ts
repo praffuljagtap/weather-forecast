@@ -6,6 +6,8 @@ export const ForecastPageContainer = styled.div`
   align-items: center;
   margin-top: 10em;
   align-items: center;
+  gap: 2em;
+  margin-bottom: 3em;
 `
 
 export const Title = styled.h1`
@@ -16,7 +18,7 @@ export const Title = styled.h1`
 export const ContentContainers = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2em;
   padding: 0 10px 0 10px;
-  min-width: 30em;
+  width: 30em;
 `

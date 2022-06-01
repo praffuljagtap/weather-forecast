@@ -1,5 +1,7 @@
 # Weather Forecast
 
+The project shows weather forecast of every 3 hours.
+
 This project is built using the following technologies - 
 - React
 - TypeScript

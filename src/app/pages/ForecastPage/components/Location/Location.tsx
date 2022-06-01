@@ -16,7 +16,7 @@ const Location: React.FC<LocationType> = ({ location, setLocation }) => {
     <LocationContainer>
       <Input
         placeholder="Enter a location..."
-        onKeyDown={(event) => throttleFunction(throttle, () => updateLocation(event), 500)}
+        onKeyDown={(event) => throttleFunction(throttle, () => updateLocation(event), 1000)}
       />
     </LocationContainer>
   )

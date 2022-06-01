@@ -19,7 +19,8 @@ const OpenWeatherAPI = (): OpenWeatherAPIType => {
       return fetch(`${BASE_URL}?${new URLSearchParams({
         q: location || '',
         cnt: DAYS.toString(),
-        appId: APP_ID
+        appId: APP_ID,
+        units: 'metric'
       })}`)
       .then((response: Response) => {
         const httpStatus = HttpResponseHandler(response) // Doesn't do much but it ideally should - keeping it simple
